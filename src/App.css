@@ -6,3 +6,179 @@
     padding: 0;
     font-family: 'Kanit', sans-serif;
 }
+
+body {
+    background: #272829;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 720px;
+    min-height: 600px;
+    background: #fff;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+}
+
+h1 {
+    margin: 32px 0;
+    color: #000;
+    font-size: 24px;
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.todo-form {
+    margin-bottom: 32px;
+}
+
+.todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #61677A;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #000;
+}
+
+.todo-input::placeholder {
+    color: #000;
+}
+
+.todo-button {
+    margin-left: 25px;
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: #61677A;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.todo-input.edit {
+    border: 2px solid #61677A;
+}
+
+.todo-button.edit {
+    background: #61677A;
+    padding: 16px 22px;
+}
+
+.select-button {
+    position: relative;
+    height: 16px;
+    padding: 12px 14px;
+    background-color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #000;
+    background: #61677A;
+
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.todo-row {
+    background: #61677A;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    margin-right: 5px;
+    color: #000;
+}
+
+.edit-icon {
+    color: #000;
+}
+
+
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: transparent;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#000;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+select::-ms-expand {
+    display: none;
+}
+
+select option:hover {
+    box-shadow: 0 0 10px 100px #000 inset;
+}
+
+.test {
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 10em;
+    height: 3.4em;
+    line-height: 3.4;
+    background: transparent;
+    overflow: hidden;
+    border-radius: .25em;
+    border: 2px solid #61677A;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #61677A;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+
+.select:hover::after {
+    color: #000;
+}
