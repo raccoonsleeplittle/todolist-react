@@ -42,7 +42,7 @@ h1 {
 .todo-input {
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
-    border: 2px solid #61677A;
+    border-radius: 5px;
     outline: none;
     width: 320px;
     background: transparent;
@@ -57,7 +57,7 @@ h1 {
     margin-left: 25px;
     padding: 16px;
     border: none;
-    border-radius: 0 4px 4px 0;
+    border-radius: 5px;
     cursor: pointer;
     outline: none;
     background: #61677A;
@@ -103,9 +103,20 @@ h1 {
 }
 
 .todo-row {
-    background: #61677A;
+    background: #20d73b;
 }
 
+.high {
+    background: #e83535;
+}
+
+.medium {
+    background: #328aee;
+}
+
+.low {
+    background: #20d73b;
+}
 .icons {
     display: flex;
     align-items: center;
@@ -159,11 +170,12 @@ select option:hover {
     position: relative;
     display: flex;
     width: 10em;
-    height: 3.4em;
-    line-height: 3.4;
+    height: 3.3em;
+    line-height: 3.3;
     background: transparent;
     overflow: hidden;
-    border-radius: .25em;
+    /* border-radius: .25em; */
+    border-radius: 5px;
     border: 2px solid #61677A;
 }
 

@@ -61,9 +61,9 @@ function TodoForm(props) {
           <div className="select">
             <select name="priority" value={priority} onChange={e => setPriority(e.target.value)}>
               <option selected disabled>Priority</option>
-              <option value="low">LOW</option>
-              <option value="medium">MEDIUM</option>
-              <option value="high">HIGH</option>
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
             </select>
           </div>
           </div>

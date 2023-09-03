@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import TodoForm from './TodoForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
@@ -21,9 +21,13 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
     return <TodoForm edit={edit} onSubmit={submitUpdate} />;
   }
 
+  useEffect(() => {
+    console.log(todos)
+  },[todos]);
+
   return todos.map((todo, index) => (
     <div
-      className={todo.isComplete ? 'todo-row complete' : 'todo-row'}
+      className={`todo-row ${todo.isComplete ? 'complete' : ''} ${todo.priority === 'low' ? 'low' : (todo.priority === 'medium' ? 'medium' : (todo.priority === 'high' ? 'high' : ''))}`}
       key={index}
     >
       <div key={todo.id} onClick={() => completeTodo(todo.id)}>
